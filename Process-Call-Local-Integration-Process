@@ -1,0 +1,117 @@
+# Process Call & Local Integration Process
+
+## Project Overview
+
+This SAP CPI project demonstrates how Process Call and Local Integration Process can be used to build modular and reusable integration flows.
+
+The iFlow receives an HTTP request, invokes multiple Local Integration Processes through Process Calls, modifies the message using Content Modifiers, and returns the response to the sender.
+
+---
+
+## Technologies Used
+
+- SAP Integration Suite
+- SAP Cloud Integration (CPI)
+- HTTP Adapter
+- Process Call
+- Local Integration Process
+- Content Modifier
+- Postman
+
+---
+
+## Flow
+
+HTTP Sender
+        │
+        ▼
+Main Integration Process
+        │
+ ┌───────────────┐
+ │ Process Call 1│
+ └───────────────┘
+        │
+ ┌───────────────┐
+ │ Process Call 2│
+ └───────────────┘
+        │
+HTTP Response
+
+Each Process Call invokes a Local Integration Process containing Content Modifiers.
+
+---
+
+## Features
+
+- Process Call implementation
+- Local Integration Process
+- Reusable integration logic
+- Content Modifier usage
+- HTTP endpoint
+- Successful deployment
+- Message monitoring
+- Postman testing
+
+---
+
+## Project Screenshots
+
+### iFlow Design
+
+![iFlow](iFlow-Design.png)
+
+---
+
+### Deployment Status
+
+![Deployment](Deployment-Status.png)
+
+---
+
+### Postman Testing
+
+![Postman](Postman-Test.png)
+
+---
+
+### Monitor Flow
+
+![Monitor](Monitor-Flow.png)
+
+---
+
+### Headers
+
+![Headers](Monitor-Headers.png)
+
+---
+
+### Payload
+
+![Payload](Monitor-Payload.png)
+
+---
+
+### Integration Suite
+
+![Home](Integration-Suite-Home.png)
+
+---
+
+## Learning Outcomes
+
+- Understood Process Call
+- Learned Local Integration Process
+- Implemented reusable integration logic
+- Configured HTTP Sender
+- Used Content Modifiers
+- Tested using Postman
+- Monitored message execution
+- Explored runtime payloads and headers
+
+---
+
+Author
+
+Mitta Karthik Reddy
+SAP CPI | SAP Integration Suite | Dell Boomi
